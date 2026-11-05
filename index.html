@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moodscape - Find Your Mood</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>✿ Moodscape</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#discover">Discover</a>
+            <a href="#saved">My Collection</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div>
+            <p class="tagline">YOUR PERSONAL INSPIRATION SPACE</p>
+
+            <h1>
+                What does your
+                <span>heart feel like</span> today?
+            </h1>
+
+            <p class="intro">
+                Choose your mood and discover beautiful
+                activities, food, places and creative ideas.
+            </p>
+
+            <a href="#discover" class="btn">Explore Your Mood ↓</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=800"
+                 alt="Beautiful nature">
+        </div>
+    </section>
+
+    <section class="discover" id="discover">
+
+        <h2>Choose Your Current Mood 🌷</h2>
+
+        <div class="moods">
+
+            <button onclick="showMood('calm')">
+                🌿 Slow & Calm
+            </button>
+
+            <button onclick="showMood('adventure')">
+                🧭 Adventure
+            </button>
+
+            <button onclick="showMood('cozy')">
+                🧸 Soft & Cozy
+            </button>
+
+            <button onclick="showMood('creative')">
+                🎨 Creative
+            </button>
+
+        </div>
+
+        <h2 id="mood-title">A Softer Kind of Day</h2>
+
+        <div class="filters">
+            <button onclick="filterIdeas('all')">Everything</button>
+            <button onclick="filterIdeas('place')">Places</button>
+            <button onclick="filterIdeas('food')">Food</button>
+            <button onclick="filterIdeas('create')">Creative</button>
+        </div>
+
+        <div id="ideas" class="cards"></div>
+
+    </section>
+
+    <section class="saved" id="saved">
+        <h2>My Little Collection ♡</h2>
+        <div id="saved-ideas" class="cards"></div>
+    </section>
+
+    <footer>
+        <h2>✿ Moodscape</h2>
+        <p>Little ideas. Lovely moments. Your kind of day.</p>
+        <p>Created using HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
